@@ -2,6 +2,7 @@ package hw4.maze.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 import java.util.ArrayList;
 import java.util.stream.Stream;
 
@@ -17,6 +18,11 @@ import org.junit.jupiter.params.provider.MethodSource;
 import hw4.maze.Cell;
 import hw4.maze.CellComponents;
 import hw4.maze.Row;
+
+import maze.Row;
+import maze.Cell;
+import maze.CellComponents;
+import maze.Grid;
 
 class RowTest {
 	
