@@ -11,7 +11,7 @@ public class Row {
 		this.cells = cells;
 	}
 
-	public List<Cell> getCells() {
+	public ArrayList<Cell> getCells() {
 		return cells;
 	}
 
