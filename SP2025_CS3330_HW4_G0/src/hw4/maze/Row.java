@@ -1,12 +1,13 @@
 package hw4.maze;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class Row {
-	private List<Cell> cells;
+	private ArrayList<Cell> cells;
 	
-	public Row(List<Cell> cells) {
+	public Row(ArrayList<Cell> cells) {
 		this.cells = cells;
 	}
 
@@ -14,7 +15,7 @@ public class Row {
 		return cells;
 	}
 
-	public void setCells(List<Cell> cells) {
+	public void setCells(ArrayList<Cell> cells) {
 		this.cells = cells;
 	}
 

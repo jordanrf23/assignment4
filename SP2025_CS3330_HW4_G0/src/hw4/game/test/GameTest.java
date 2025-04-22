@@ -1,7 +1,6 @@
 package hw4.game.test;
 import static org.junit.jupiter.api.Assertions.*;
 
-
 import java.util.ArrayList;
 import java.util.stream.Stream;
 
