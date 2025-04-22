@@ -1,8 +1,8 @@
-package game;
+package hw4.game;
 
 import java.util.Scanner;
 
-import maze.*;
+import hw4.maze.*;
 
 public class Main {
 

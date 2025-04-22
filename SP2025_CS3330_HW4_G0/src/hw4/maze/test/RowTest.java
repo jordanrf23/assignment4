@@ -17,12 +17,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import hw4.maze.Cell;
 import hw4.maze.CellComponents;
+import hw4.maze.Grid;
 import hw4.maze.Row;
-
-import maze.Row;
-import maze.Cell;
-import maze.CellComponents;
-import maze.Grid;
 
 class RowTest {
 	

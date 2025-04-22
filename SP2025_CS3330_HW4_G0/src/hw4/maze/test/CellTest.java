@@ -1,10 +1,5 @@
 package hw4.maze.test;
 
-import maze.Grid;
-import maze.CellComponents;
-import maze.Cell;
-import maze.Row;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.stream.Stream;
@@ -20,6 +15,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import hw4.maze.Cell;
 import hw4.maze.CellComponents;
+import hw4.maze.Grid;
+import hw4.maze.Row;
 
 class CellTest {
 	
