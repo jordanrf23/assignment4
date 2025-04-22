@@ -1,5 +1,7 @@
 package hw4.maze;
 
+import java.util.Objects;
+
 public class Cell {
 	
 	private CellComponents up;
@@ -20,7 +22,9 @@ public class Cell {
 	}
 
 	public void setUp(CellComponents up) {
-		this.up = up;
+		if (up != null) {
+			this.up = up;
+		}
 	}
 
 	public CellComponents getDown() {
@@ -28,7 +32,9 @@ public class Cell {
 	}
 
 	public void setDown(CellComponents down) {
-		this.down = down;
+		if(down != null) {
+			this.down = down;
+		}
 	}
 
 	public CellComponents getLeft() {
@@ -36,7 +42,9 @@ public class Cell {
 	}
 
 	public void setLeft(CellComponents left) {
-		this.left = left;
+		if(left != null) {
+			this.left = left;
+		}
 	}
 
 	public CellComponents getRight() {
@@ -44,8 +52,34 @@ public class Cell {
 	}
 
 	public void setRight(CellComponents right) {
-		this.right = right;
+		if(right != null) {	
+			this.right = right;
+		}
 	}
+
+	@Override
+	public String toString() {
+		return "Cell [up=" + up + ", down=" + down + ", left=" + left + ", right=" + right + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(down, left, right, up);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cell other = (Cell) obj;
+		return down == other.down && left == other.left && right == other.right && up == other.up;
+	}
+	
+	
 	
 
 }
