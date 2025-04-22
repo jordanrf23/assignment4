@@ -1,6 +1,9 @@
 package hw4.maze.test;
 
-import maze.*;
+import maze.Grid;
+import maze.CellComponents;
+import maze.Cell;
+import maze.Row;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

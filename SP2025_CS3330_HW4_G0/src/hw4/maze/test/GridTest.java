@@ -15,6 +15,11 @@ import hw4.maze.CellComponents;
 import hw4.maze.Grid;
 import hw4.maze.Row;
 
+import maze.Grid;
+import maze.CellComponents;
+import maze.Cell;
+import maze.Row;
+
 class GridTest {
 
 	private static Grid grid;
