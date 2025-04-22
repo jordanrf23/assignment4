@@ -1,25 +1,54 @@
 package hw4.player;
 
+import java.util.Objects;
+
+import hw4.maze.Cell;
+import hw4.maze.Row;
+
 public class Player {
-	private int row;
-	private int col;
+	private Cell currentCell;
+	private Row currentRow;
 	
-	public Player(int row, int col) {
-		this.row = row;
-		this.col = col;
-	}
-
-	public int getRow() {
-		return row;
-	}
-
-	public int getCol() {
-		return col;
+	public Player(Row currentRow, Cell currentCell) {
+		this.currentCell = currentCell;
+		this.currentRow = currentRow;
 	}
 	
-	public void setPosition(int row, int col) {
-		this.row = row;
-		this.col = col;
+	public Cell getCurrentCell() {
+		return currentCell;
+	}
+	public void setCurrentCell(Cell currentCell) {
+		this.currentCell = currentCell;
+	}
+	public Row getCurrentRow() {
+		return currentRow;
+	}
+	public void setCurrentRow(Row currentRow) {
+		this.currentRow = currentRow;
 	}
 
+	@Override
+	public String toString() {
+		return "Player [currentCell=" + currentCell + ", currentRow=" + currentRow + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(currentCell, currentRow);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Player other = (Player) obj;
+		return Objects.equals(currentCell, other.currentCell) && Objects.equals(currentRow, other.currentRow);
+	}
+	
+	
+	
 }
