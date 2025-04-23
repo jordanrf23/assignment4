@@ -11,25 +11,40 @@ import hw4.player.Movement;
 
 public class Game {
 	
+	//variable to hold the grid
 	private Grid grid;
 	
+	/*
+	 * assigning the grid 
+	 */
 	public Game(Grid grid) {
 		this.grid = grid;
 	}
 	
+	/*
+	 * game gets an instance of a random size for the grid
+	 */
 	public Game(int size) {
 		this.grid = createRandomGrid(size);
 	}
 	
-
+	/*
+	 * obtain the grid
+	 */
 	public Grid getGrid() {
 		return grid;
 	}
-
+	
+	/*
+	 * assigns the grid
+	 */
 	public void setGrid(Grid grid) {
 		this.grid = grid;
 	}
 	
+	/*
+	 * obtains the player and the movements to move with in the grid 
+	 */
 	public boolean play(Movement movement, Player player) {
 		if (movement == null || player == null || grid == null)
 			return false;
@@ -67,6 +82,10 @@ public class Game {
 		}
 		return false;
 	}
+	
+	/*
+	 * creating the random grid given a size 
+	 */
 	public Grid createRandomGrid(int size) {
 		if (size < 3 || size > 7) {
 			return null;
@@ -106,11 +125,17 @@ public class Game {
 
 		return new Grid(rows);
 	}
-
+	
+	/*
+	 * creates the random cell components 
+	 */
 	private CellComponents randomComponent() {
 		return Math.random() > 0.5 ? CellComponents.APERTURE : CellComponents.WALL;
 	}
 
+	/*
+	 * gives the game grid to the user
+	 */
 	@Override
 	public String toString() {
 		return "Game [grid=" + grid + "]";
