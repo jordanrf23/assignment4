@@ -47,7 +47,7 @@ public class Cell {
 	 * taking the down movement as long as it is not null
 	 */
 	public void setDown(CellComponents down) {
-		if(down != null) {
+		if(down != null) {	
 			this.down = down;
 		}
 	}
@@ -89,7 +89,7 @@ public class Cell {
 	 */
 	@Override
 	public String toString() {
-		return "Cell [up=" + up + ", down=" + down + ", left=" + left + ", right=" + right + "]";
+		return "Cell [left=" + left + ", right=" + right + ", up=" + up + ", down=" + down + "]";
 	}
 	
 	/*
