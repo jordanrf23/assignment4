@@ -1,7 +1,6 @@
 package hw4.maze;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class Row {
