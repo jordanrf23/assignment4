@@ -4,6 +4,7 @@ In this assignment, you are expected to design and implement “Tears, Despair &
 ging”. In this game, you are going to construct a grid of size NxN (with a size constraint,
 see description for details). Your agent tries to escape from the grid by keeping track of
 apertures.
+
 2 Description
 In a grid, each cell is composed of 4 components, which are up, bottom, left, and right.
 Each component can be WALL, APERTURE, or EXIT.
